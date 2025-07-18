@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #afc5d4;
+}
+
+.App {
+  font-family: cursive;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;  /* ✅ Alinea el contenido en vertical */
+  align-items: center;     /* Centra horizontalmente */
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #083699;
+}
+
+.descripcion {
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #0e0d0d;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contenedor-gatos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Para que se acomoden bien en pantallas pequeñas */
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+.reset-btn {
+  background-color: #7484b9;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+  background-color: #507099;
+}
